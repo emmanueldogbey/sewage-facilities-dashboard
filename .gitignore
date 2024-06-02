@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 ShinyDashboard.Rproj
-scripts/app2.R
+app2.R
+rsconnect/

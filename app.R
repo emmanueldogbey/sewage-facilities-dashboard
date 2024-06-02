@@ -30,11 +30,11 @@ ui =
 
 server = function(input, output){
   admBoundaries = 
-    st_read(here("data/ghanaAdminBoundaries.geojson")) |> 
+    st_read("data/ghanaAdminBoundaries.geojson") |> 
       dplyr::filter(admin_level == 4)
     
   sewageFacilities = 
-    read_csv(here("data/wastewaterFacilities.csv")) |> 
+    read_csv("data/wastewaterFacilities.csv") |> 
     janitor::clean_names() |> 
     st_as_sf(coords=c("y", "x"), crs=4326) |> 
     st_join(admBoundaries, join=st_intersects)
