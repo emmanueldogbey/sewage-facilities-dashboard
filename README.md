@@ -1,1 +1,1 @@
-# Dashboard for the Environmental Health and Sanitation Directorate - Ministry of Sanitation and Water Resources
+## Dashboard of sewage facilities in Ghana and other relevant information
