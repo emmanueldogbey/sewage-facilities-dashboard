@@ -4,7 +4,7 @@ library(shinyWidgets)
 library(tidyverse)
 library(leaflet)
 library(sf)
-library(here)
+library(DT)
 source("helper.R")
 
 
@@ -87,7 +87,3 @@ server = function(input, output){
 shinyApp(ui=ui, server=server)
 
 
-  # p("Ministry of Sanitation and Water Resources", align="center"),
-  # p(img(src="MSWRLogo.png", height=70, width=70), align="center"),
-  # p("Environmental Health and Sanitation Directorate", align="center"),
-  # p("Liquid Waste Management Unit", align="center"),
